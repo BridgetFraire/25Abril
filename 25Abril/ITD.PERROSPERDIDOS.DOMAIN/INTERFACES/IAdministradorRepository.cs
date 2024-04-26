@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Abril24.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES
+namespace Abril25.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES
 {
         public interface IAdministradorRepository
         {

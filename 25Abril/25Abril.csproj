@@ -15,14 +15,21 @@
     <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="MySql.Data" Version="8.3.0" />
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="ITD %28copiar%29.PERROSPERDIDOS.API\" />
+    <None Remove="ITD %28copiar%29.PERROSPERDIDOS.API\CONTROLLERS\" />
+    <None Remove="TEST\" />
+    <None Remove="TEST\CONTROLLERS\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="ITD %28copiar%29.PERROSPERDIDOS.API\" />
+    <Folder Include="ITD %28copiar%29.PERROSPERDIDOS.API\CONTROLLERS\" />
+    <Folder Include="TEST\" />
+    <Folder Include="TEST\CONTROLLERS\" />
   </ItemGroup>
 </Project>

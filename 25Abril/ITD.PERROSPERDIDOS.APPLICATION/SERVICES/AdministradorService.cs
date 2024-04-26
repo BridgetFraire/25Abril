@@ -1,9 +1,9 @@
 ﻿using System;
-using Abril24.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
+using Abril25.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Abril24.ITD.PERROSPERDIDOS.APPLICATION.SERVICES
+namespace Abril25.ITD.PERROSPERDIDOS.APPLICATION.SERVICES
     {
         public class AdministradorService
         {
