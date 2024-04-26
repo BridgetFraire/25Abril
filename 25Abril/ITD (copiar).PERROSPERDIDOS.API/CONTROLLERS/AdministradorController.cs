@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.Net.Mime;
 
-using Abril24.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
+using Abril25.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
 
-namespace Abril24.ITD.PERROSPERDIDOS.API.CONTROLLERS
+namespace Abril25.ITD.PERROSPERDIDOS.API.CONTROLLERS
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -77,3 +77,8 @@ namespace Abril24.ITD.PERROSPERDIDOS.API.CONTROLLERS
         }
     }
 }
+// git remote add origin25 https://github.com/BridgetFraire/25Abril.git
+// git push -u origin main
+// git commit -m "Tercer Intento de Proyecto"
+//cd ~/25Abril
+

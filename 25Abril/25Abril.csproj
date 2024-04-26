@@ -17,4 +17,12 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="ITD %28copiar%29.PERROSPERDIDOS.API\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="ITD %28copiar%29.PERROSPERDIDOS.API\" />
+  </ItemGroup>
 </Project>

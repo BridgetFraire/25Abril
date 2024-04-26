@@ -1,11 +1,12 @@
 ﻿using System;
-using Abril24.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
+using Abril25.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Data;
 using Dapper;
+using MySql.Data.MySqlClient;
 
-namespace Abril24.ITD.PERROSPERDIDOS.INFRAESTRUCTURE.REPOSITORIES
+namespace Abril25.ITD.PERROSPERDIDOS.INFRAESTRUCTURE.REPOSITORIES
 {
      public class AdministradorRepository : IAdministradorRepository
         {
@@ -13,10 +14,12 @@ namespace Abril24.ITD.PERROSPERDIDOS.INFRAESTRUCTURE.REPOSITORIES
 
             public AdministradorRepository(IDbConnection dbConnection)
             {
-                _dbConnection = dbConnection;
+            _dbConnection = new MySqlConnection(BDPERROPERDIDO);
             }
 
-            public async Task<int> AgregarAdministrador(string usuario, long telefono, string contrasena)
+        public string BDPERROPERDIDO { get; }
+
+        public async Task<int> AgregarAdministrador(string usuario, long telefono, string contrasena)
             {
                 var parameters = new { p_usuario = usuario, p_telefono = telefono, p_contrasena = contrasena };
                 return await _dbConnection.ExecuteAsync("alta_administrador", parameters, commandType: CommandType.StoredProcedure);

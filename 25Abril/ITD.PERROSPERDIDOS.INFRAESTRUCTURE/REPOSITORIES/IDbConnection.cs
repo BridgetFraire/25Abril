@@ -1,6 +1,6 @@
 ﻿using System.Data;
 using System.Threading.Tasks;
-using Abril24.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
+using Abril25.ITD.PERROSPERDIDOS.DOMAIN.INTERFACES;
 
 public class AdministradorRepository : IAdministradorRepository
 {
